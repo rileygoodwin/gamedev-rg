@@ -3,3 +3,15 @@ this is <b>bold</b>True?<br>
 This is <b style="color:red; background-color:coloryellow;">cool</b> Yes!<br>
 <br>
 this is <i style="border-style:groove;>italic with a border</i>
+<p style="color: blue; font-size: 16px;">This is a blue paragraph with 16px font size.</p>
+<tag style="property: value; property2: value2;">Content</tag>
+<p style="text-align: center;">Centered text</p>
+<div style="padding: 10px; margin: 20px;">Box with padding and margin</div>
+<p style="border: 2px solid red;">Paragraph with border</p>
+<div style="display: inline-block;">Inline block box</div>
+<div style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); padding: 20px;">
+  Box with shadow
+</div>
+<div style="transition: all 0.3s ease; background-color: lightblue; padding: 10px;">
+  Smooth transition (needs JS or CSS hover to see effect)
+</div>
