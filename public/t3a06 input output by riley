@@ -1,1 +1,16 @@
+< href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">good refrence to input putput
+javascript inner html value by riley</a>
+<h4> example input output code</h4>
+</pre>
+let myIno1 = document.get elementbyId('mynum01').value
+document.getelementbyId('mydiv01').innerhtml=myIn01+'squared='+ myIn01*myIn01
+</pre>
+<h4> example working code</h4>
+<input id="mynum01" type=number value"4" ><br>
+<input type=button value="my event squares" onclick="{
+let myIn01=parseFloat(document.getelementbyId('mynum01').value)
+let myAnswer=myIn01*myIn01
+document.getelementbyid('myDiv01').innerhtml=myIn01+,squared'+myAnswer
+}"><br>
+<div id="myDiv01">...</div>
 
