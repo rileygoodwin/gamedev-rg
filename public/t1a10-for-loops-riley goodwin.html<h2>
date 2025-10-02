@@ -1,0 +1,14 @@
+<input type=button value="myEvent squares"onClick="{
+  let mytemp=''
+  document.getelementbyid('myDiv01').innerHTML=''
+  for (x=0; x<10;  x++){
+if (x==3){
+myTemp += x +  'third <br>'
+  myTemp +=x+ '<br>'
+  } else {
+myTemp +=x+ '<br>'
+  }
+}
+document.getelementbyid('myDiv01').innerHTML = myTemp
+  }"><br>
+  <div id="myDiv01">...</div>
