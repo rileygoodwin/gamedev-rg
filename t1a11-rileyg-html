@@ -2,6 +2,10 @@ let myArray=new Array()
 myArray[]\0]='fred'
 myArray[1]= 'mary'
 myArray[2]='zizzy'
+myArray[3]='brizzy'
+myArray[4]=spizzy'
+myArray[5]='rizzy'
+myArray[6]='
 </script>
 <h2 align=center>t1a11-for-arrays-fred.html</h2>
 Max Array Entry: <input type=text id="myText01" value="3"><br>
