@@ -2,12 +2,11 @@
 
 
 <input=button value="mouseOver" onMouseOver="{this.style.backgroundColor='green'}"  ><br>
-<input type="button" value="onclick & Reset" 
-       onmouseover="this.style.backgroundColor='yellow'" 
-       onmouseout="this.style.backgroundColor=''"><br>
+<input type="button" value="hover&Reset" 
+       onmouseover="this.style.backgroundColor='yellow'"><br>
+       onmouseout="this.style.backgroundColor='black'"><br>
 
-<input type="button" value="triple Click" ondblclick="this.style.fontSize='40px'"><br>
+<input type="button" value="double Click" ondblclick="this.style.fontSize='40px'"><br>
+<input type="button" value="Hover Cursor" onmouseover="this.style.cursor='pointer'"><br>
 
 
-document.getElementById('myButton').addEventListener('click', function() {
-  alert('Button was clicked!');
