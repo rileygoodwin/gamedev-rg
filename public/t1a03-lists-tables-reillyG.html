@@ -1,19 +1,82 @@
-<h2> Lists</h2>
-<ol> ordered list of fav foods (at least 5)
-<li>Kd
-<li>steak
-</ol><
-       <ul> unordered list of countries(at least5)
-       <li>canada
-         <li>france
-       </ul>
-<b>assignment</b>. you make a list inside a list of multiple items<br>
-  <h2> Tables</h2>
-  <table border=1>
-    <tr><td<A</td><td>B</td<></td></tr>
-    <tr><td></td>2</td><</tr>
-  </table><br>
-  <b>assignment<?b> make a 3 x 4 table
-  then make a link and image table of border=0<br><br><br>
-    <h2>Advancd</h2>
-  load an image and get it to move 10 pixels to the left using the button below<br>
+<h2>Lists</h2>
+<ol>
+  <li>KD</li>
+  <li>Steak</li>
+  <li>Pizza</li>
+  <li>Sushi</li>
+  <li>Burgers</li>
+</ol>
+
+<ul>
+  <li>Canada</li>
+  <li>France</li>
+  <li>Germany</li>
+  <li>Japan</li>
+  <li>Australia</li>
+</ul>
+
+<b>Assignment:</b> Create a list inside a list of multiple items.<br>
+<ul>
+  <li>Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Tables</h2>
+<table border="1">
+  <tr>
+    <td>A</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+</table><br>
+
+<b>Assignment:</b> Make a 3 x 4 table.<br><br>
+<table border="1">
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+  </tr>
+</table><br>
+
+<b>Assignment:</b> Create a link and image table with border="0".<br><br>
+<table border="0">
+  <tr>
+    <td><a href="https://www.example.com">Visit Example</a></td>
+    <td><img src="https://via.placeholder.com/150" alt="Example Image"></td>
+  </tr>
+</table><br>
+
+<h2>Advanced</h2>
+<p>Load an image and move it 10 pixels to the left using the button below:</p>
+<img id="movableImage" src="https://via.placeholder.com/150" alt="Movable Image" style="position: relative; left: 0px;">
+<button onclick="moveImage()">Move Image 10px Left</button>
+
+<script>
+  function moveImage() {
+    var img = document.getElementById("movableImage");
+    var currentLeft = parseInt(window.getComputedStyle(img).left, 10);
+    img.style.left = (currentLeft - 10) + "px";
+  }
+</script>
