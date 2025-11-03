@@ -1,24 +1,68 @@
-let myArray=new Array()
-myArray[]\0]='fred'
-myArray[1]= 'mary'
-myArray[2]='zizzy'
-myArray[3]='brizzy'
-myArray[4]='spizzy'
-myArray[5]='rizzy'
-myArray[6]='crizzy'
+<!DOCTYPE html>
+<html>
+<head>
+<title>t1a11-for-arrays-fred.html</title>
+</head>
+<body>
+
+<script>
+// --- Original Array Example ---
+let myArray = new Array();
+myArray[0] = 'fred';
+myArray[1] = 'mary';
+myArray[2] = 'zizzy';
+myArray[3] = 'brizzy';
+myArray[4] = 'spizzy';
+myArray[5] = 'rizzy';
+myArray[6] = 'crizzy';
+
+// --- Seven More Arrays ---
+let numArray = [10, 20, 30, 40, 50, 60, 70];
+let fruitArray = ['apple', 'banana', 'cherry', 'mango', 'pear', 'kiwi', 'grape'];
+let colorArray = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink'];
+let animalArray = ['cat', 'dog', 'fish', 'lion', 'tiger', 'zebra', 'bear'];
+let cityArray = ['Paris', 'London', 'Tokyo', 'New York', 'Sydney', 'Toronto', 'Rome'];
+let boolArray = [true, false, true, false, true, false, true];
+let floatArray = [1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7];
 </script>
-<h2 align=center>t1a11-for-arrays-fred.html</h2>
-Max Array Entry: <input type=text id="myText01" value="3"><br>
-<input type=button value="Example onClick" onClick="{ let myMax = document.getElementbyId('myTexto1').value
-let mySum=''
-document.getElementbyId('myDiv01').innerHTML=''
 
-for (let myloop=0; myLoop < myMax; myLoop++){
-mySum+= 'loop#:' + myLoop+' array entry: '+my Array[myLoop]+'<br>'
-)
-document.getElementbyId('myDiv01').innerHTML=mySum
+<h2 align="center">t1a11-for-arrays-fred.html</h2>
+
+Max Array Entry: 
+<input type="text" id="myText01" value="3"><br><br>
+
+<!-- Button to Show Array Contents -->
+<input type="button" value="Example onClick" onClick="{
+  let myMax = parseInt(document.getElementById('myText01').value);
+  let mySum = '';
+  document.getElementById('myDiv01').innerHTML = '';
+
+  // Display entries from myArray up to user-defined max
+  for (let myLoop = 0; myLoop < myMax; myLoop++) {
+    mySum += 'Loop #: ' + myLoop + ' — Array Entry: ' + myArray[myLoop] + '<br>';
+  }
+
+  // Show the result
+  document.getElementById('myDiv01').innerHTML = mySum;
 }">
-<mydiv id="myDIV01">...</div>
+<br><br>
 
-<br>
-do atleast 7 other arrays
+<div id="myDiv01">...</div>
+
+<hr>
+
+<h3>Extra Arrays Output Examples</h3>
+<script>
+// Display examples of other arrays
+document.write('<b>Numbers:</b> ' + numArray.join(', ') + '<br>');
+document.write('<b>Fruits:</b> ' + fruitArray.join(', ') + '<br>');
+document.write('<b>Colors:</b> ' + colorArray.join(', ') + '<br>');
+document.write('<b>Animals:</b> ' + animalArray.join(', ') + '<br>');
+document.write('<b>Cities:</b> ' + cityArray.join(', ') + '<br>');
+document.write('<b>Booleans:</b> ' + boolArray.join(', ') + '<br>');
+document.write('<b>Floats:</b> ' + floatArray.join(', ') + '<br>');
+</script>
+
+</body>
+</html>
+
