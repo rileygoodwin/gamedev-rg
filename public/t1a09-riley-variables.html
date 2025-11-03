@@ -1,13 +1,62 @@
-Show correct use of const' var, let and interger, character, boolean, float and string.<br>
-<h2> concatenating (adding) sgtrings</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using const, var, let and Data Types</title>
+</head>
+<body>
 
-<input id="t1a09" type=variables value="riley" >
+<h2>Concatenating (Adding) Strings</h2>
+
+<!-- Input fields -->
+<input id="firstName" type="text" value="Riley">
 +
-<input id="t1a09" type=variables value="riley" ><br>
-<span id="myspan01">...</span>span><br>
-<input type=button value"add(concatenate) strings" onclick="{
-let myriley = document.getelementbyId('myriley').value
-var myriley = document.getelementbyId('myriley').value
-const myout = document.getelementbyId('myspan01')
-myout.innerhtml=myriley+''+myriley
+<input id="lastName" type="text" value="Smith"><br><br>
+
+<!-- Output area -->
+<span id="myspan01">Result will show here</span><br><br>
+
+<!-- Button to concatenate strings -->
+<input type="button" value="Add (Concatenate) Strings" onclick="{
+    // Using let (block-scoped variable)
+    let first = document.getElementById('firstName').value
+
+    // Using var (function-scoped variable)
+    var last = document.getElementById('lastName').value
+
+    // Using const (cannot be reassigned)
+    const outputSpan = document.getElementById('myspan01')
+
+    // Concatenate strings with a space in between
+    outputSpan.innerHTML = first + ' ' + last
+}">
+
+<hr>
+
+<h2>Examples of Different Data Types</h2>
+<script>
+// Integer
+let myInt = 25
+
+// Float (decimal number)
+let myFloat = 3.14
+
+// Character (single letter)
+let myChar = 'A'
+
+// String (sequence of characters)
+let myString = "Hello World"
+
+// Boolean (true or false)
+let myBool = true
+
+document.write('<b>Integer:</b> ' + myInt + '<br>')
+document.write('<b>Float:</b> ' + myFloat + '<br>')
+document.write('<b>Character:</b> ' + myChar + '<br>')
+document.write('<b>String:</b> ' + myString + '<br>')
+document.write('<b>Boolean:</b> ' + myBool + '<br>')
+</script>
+
+</body>
+</html>
+
 
