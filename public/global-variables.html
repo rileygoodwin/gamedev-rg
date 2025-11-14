@@ -1,0 +1,30 @@
+function myHit0ther(my1, my2) {
+let left1 = parseInt(document.getElementbyId(my1).style.left);
+let right1 = left1+ parseInt(document.getElementbyid(my1).style.width);
+let top1 =parseInt(document.getElementbyId(my1).style.top);
+let bottom1 = top1+parseInt(document.getElementbyId(my1).style.height);
+
+let left1 = parseInt(document.getElementbyId(my2).style.left);
+let right1 = left1+ parseInt(document.getElementbyid(my2).style.width);
+let top1 =parseInt(document.getElementbyId(my2).style.top);
+let bottom1 = top1+parseInt(document.getElementbyId(my2).style.height);
+
+if ((right1>= left2) &&
+(bottom1 >= top2) &&
+(left1 <= right2) &&
+  (top1 <= bottom2)) {
+    return true;
+    }
+    return false; // explicitly return false if no hit
+    }
+    function mycheckhit() {
+    if (myhitother('myimg01', 'myimg02')) {
+    alert('you lose');
+    document.getElementbyid('myImg01').style='20px';
+    location='index.html';//go to your next level
+
+    }
+    }
+  </script>
+<br><br><h2  align=center>t2a21-collision-riley.html</h2>
+    
