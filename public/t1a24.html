@@ -27,3 +27,15 @@
 }"><br><br>
 
 <img id="myImage01" style="position:relative; width:100px; height:80px; top:0px; left:0px;" src="myImage01.jpg">
+  body {
+  margin: 0;
+  overflow: hidden;
+  background: url("background.png") repeat-x;
+  animation: moveBg 10s linear infinite;
+}
+
+@keyframes moveBg {
+  from { background-position: 0 0; }
+  to   { background-position: -1000px 0; }
+}
+
