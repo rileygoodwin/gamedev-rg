@@ -37,5 +37,19 @@
 @keyframes moveBg {
   from { background-position: 0 0; }
   to   { background-position: -1000px 0; }
+  body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff6b6b, #5f6bff, #5fffd8);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 }
 
