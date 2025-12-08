@@ -13,7 +13,7 @@
 
 
    // global functions here
-function myHitOther(my1,my2){
+function myHitOther(watermelon2,watermelon){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
    top1    = parseInt(document.getElementById(my1).style.top)   
@@ -32,7 +32,7 @@ function myHitOther(my1,my2){
 
 
 function myCheckHit(){
-   if ( myHitOther('watermelon 2','watermelon') ){
+   if ( myHitOther('watermelon2','watermelon') ){
        alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a13-keydown.html'  // go to your next level
@@ -48,7 +48,7 @@ function myCheckHit(){
 
 </script>
 
-<img id="watermelon 2" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="watermelon 2.jpg">
+<img id="watermelon2" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="watermelon2.jpg">
 <img id="watermelon" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="watermelon.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
