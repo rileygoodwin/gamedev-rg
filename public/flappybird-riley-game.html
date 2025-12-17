@@ -59,13 +59,13 @@ function myAuto(){
 
 function myCheckHit(){
 
-   if ( myHitOther('jumpingcat.jpg','jumpingcat2.jpg') ){
+   if ( myHitOther('flappybird.jpg','jumpingcat2.jpg') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '20px'
       document.getElementById('myImg01').style.top = '60px'
    }   
    
-   if ( myHitOther('jumpingcat.jpg','jumpingcat2.jpg') ){
+   if ( myHitOther('flappybird.jpg','jumpingcat.jpg') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '20px'
       document.getElementById('myImg01').style.top = '60px'
@@ -75,7 +75,7 @@ function myCheckHit(){
 
    // YOU WIN and go to next level!
 
-   if ( myHitOther('eggbasket.jpg','eggbasket.jpg') ){
+   if ( myHitOther('flappybird.jpg','eggbasket.jpg') ){
        alert('You Win, now go to the next level')
       document.getElementById('myImg01').style.left = '20px'
       location = 'https://www.google.ca'
