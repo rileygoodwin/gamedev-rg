@@ -104,19 +104,19 @@ function myCheckHit(){
 
 
 <input type=button value="Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+  document.getElementById('flappybird.jpg').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }">
 
 <input type=button value="Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+  document.getElementById('flappybird.jpg').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
 
 
 
 
-<img id="flappybird.jpg" src="myImage01.jpg"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
+<img id="myimg01" src="flappybird.jpg"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
 <img id="myImg02" src="myImage01.jpg"  style="position:absolute; width:200px; height:200px; left:350px; top:90px;">
 <img id="myImg03" src="eggbasket.jpg"  style="position:absolute; width:200px; height:200px; left:200px; top:200px;">
 
