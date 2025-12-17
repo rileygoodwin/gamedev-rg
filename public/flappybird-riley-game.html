@@ -59,13 +59,14 @@ function myAuto(){
 
 function myCheckHit(){
 
-   if ( myHitOther('flappybird.jpg','jumpingcat2.jpg') ){
+   if ( myHitOther('myImg01','myimg05') ){
+   if ( myHitOther('myImg01','myImg04') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '20px'
       document.getElementById('myImg01').style.top = '60px'
    }   
    
-   if ( myHitOther('flappybird.jpg','jumpingcat.jpg') ){
+   if ( myHitOther('myImg01','myImg02') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '20px'
       document.getElementById('myImg01').style.top = '60px'
@@ -75,7 +76,7 @@ function myCheckHit(){
 
    // YOU WIN and go to next level!
 
-   if ( myHitOther('flappybird.jpg','eggbasket.jpg') ){
+   if ( myHitOther('myimg01','eggbasket.jpg') ){
        alert('You Win, now go to the next level')
       document.getElementById('myImg01').style.left = '20px'
       location = 'https://www.google.ca'
@@ -104,12 +105,12 @@ function myCheckHit(){
 
 
 <input type=button value="Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('flappybird.jpg').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }">
 
 <input type=button value="Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('flappybird.jpg').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
+  document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
 
