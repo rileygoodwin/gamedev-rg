@@ -1,3 +1,5 @@
+
+
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg" onload="{myAuto()}" onclick="{
 
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + myJump + 'px'
@@ -5,10 +7,10 @@
       myDoGravity()
 }">
 
-<h1 align=center><font color=red>T4A04 Maze by riley</font></h1>
+<h1 align=center><font color=red>T4A04 Maze by Fred</font></h1>
 
 
-<script> 
+<script>
 
    // global variables here
    let myGlobalX = 0
@@ -37,13 +39,13 @@ function myHitOther(my1,my2){
    }
 }
 
-
 function myDoGravity(){
      myVertical = parseInt(document.getElementById('myImg01').style.top) + 2
      myHorizontal = parseInt(document.getElementById('myImg01').style.left) 
      document.getElementById('myImg01').style.left = myHorizontal + myHorizontalJump
      document.getElementById('myImg01').style.top = myVertical + (myVertical * myGravity) + 'px'
 }
+
 
 
    // global functions here
@@ -59,14 +61,13 @@ function myAuto(){
 
 function myCheckHit(){
 
-   if ( myHitOther('myImg01','myimg05') ){
-   if ( myHitOther('myImg01','myImg04') ){
+   if ( myHitOther('myImg01','myImg02') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '20px'
       document.getElementById('myImg01').style.top = '60px'
    }   
    
-   if ( myHitOther('myImg01','myImg02') ){
+   if ( myHitOther('myImg01','myImg03') ){
        //alert('you lose')
       document.getElementById('myImg01').style.left = '20px'
       document.getElementById('myImg01').style.top = '60px'
@@ -76,7 +77,7 @@ function myCheckHit(){
 
    // YOU WIN and go to next level!
 
-   if ( myHitOther('myimg01','eggbasket.jpg') ){
+   if ( myHitOther('myImg01','myImg04') ){
        alert('You Win, now go to the next level')
       document.getElementById('myImg01').style.left = '20px'
       location = 'https://www.google.ca'
@@ -117,16 +118,7 @@ function myCheckHit(){
 
 
 
-<img id="myimg01" src="flappybird.jpg"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
-<img id="myImg02" src="myImage01.jpg"  style="position:absolute; width:200px; height:200px; left:350px; top:90px;">
-<img id="myImg03" src="eggbasket.jpg"  style="position:absolute; width:200px; height:200px; left:200px; top:200px;">
-
-
-
-<img id="myImg04" src="jumpingcat.jpg"  style="position:absolute; width:100px; height:200px; left:200px; top:200px;">
-<img id="myImg05" src="jumpingcat2.jpg"  style="position:absolute; width:100px; height:200px; left:200px; top:200px;">
-
-
-
-      
-
+<img id="myImg01" src="flappybird.jpg"  style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
+<img id="myImg02" src="jumpingcat.jpg"  style="position:absolute; width:10px; height:200px; left:350px; top:90px;">
+<img id="myImg03" src="jumpingcat2.jpg"  style="position:absolute; width:200px; height:10px; left:500px; top:400px;">
+<img id="myImg04" src="eggbasket.jpg"  style="position:absolute; width:100px; height:80px; left:800px; top:400px;">
