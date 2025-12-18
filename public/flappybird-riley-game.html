@@ -37,13 +37,13 @@ function myHitOther(my1,my2){
    }
 }
 
+
 function myDoGravity(){
      myVertical = parseInt(document.getElementById('myImg01').style.top) + 2
      myHorizontal = parseInt(document.getElementById('myImg01').style.left) 
      document.getElementById('myImg01').style.left = myHorizontal + myHorizontalJump
      document.getElementById('myImg01').style.top = myVertical + (myVertical * myGravity) + 'px'
 }
-
 
 
    // global functions here
